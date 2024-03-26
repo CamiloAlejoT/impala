@@ -1,0 +1,91 @@
+.header-desktop {
+    display: block;
+}
+
+.header-mobile {
+    display: none;
+}
+
+.header-content {
+    padding: 1em 4rem;
+    position: relative;
+}
+
+.impala-logo {
+    width: 10rem;
+    height: 5rem;
+    cursor: pointer;
+    margin: 0 4rem;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    cursor: pointer;
+}
+
+
+.nav-item {
+    font-size: 1rem;
+    padding: 1rem 2rem 0;
+    color: #EC9522;
+}
+
+
+.nav-item:hover {
+    color: white;
+}
+
+
+
+
+.back-drop-item {
+    background: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    backdrop-filter: blur(1rem);
+    transition: all 0.5s ease;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transform: translate(-0.5rem);
+    top: -1rem;
+    left: 50%;
+
+    // position: relative;
+}
+
+.back-drop-item::before {
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 98%;
+    border: 1px solid white;
+    position: absolute;
+}
+
+@media (width < 768px) {
+    .header-desktop {
+        display: none;
+    }
+
+    .header-mobile {
+        display: block;
+    }
+
+    .header-content {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .menu-button {
+        position: absolute;
+        left: 1.5rem;
+        top: 1.5rem;
+        background: #EC9522;
+    }
+
+
+
+}

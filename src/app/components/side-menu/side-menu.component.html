@@ -1,0 +1,15 @@
+<section class="header-content">
+    <button mat-mini-fab color="primary" class="menu-button">
+        <mat-icon>close</mat-icon>
+    </button>
+    <img src="/assets/svg/Recurso 7.svg" alt="" class="impala-logo">
+
+</section>
+
+<main>
+@for (item of menuList; track $index) {
+    <div class="menu-item"  id="landing-header">{{item}}</div>
+}
+        
+
+</main>

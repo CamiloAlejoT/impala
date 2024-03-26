@@ -1,0 +1,40 @@
+.menu-button {
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    background: #EC9522;
+}
+
+.impala-logo {
+    width: 10rem;
+    height: 5rem;
+    margin: 1.5rem 4rem;
+}
+
+.header-content {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.menu-item {
+    color: white;
+    font-size: 2rem;
+    margin: 0rem 4rem;
+    text-align: center;
+    border-bottom: 3px solid white;
+    padding: 2rem;
+}
+
+.menu-item:last-child{
+    border-bottom: none;
+} 
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70%;
+}
