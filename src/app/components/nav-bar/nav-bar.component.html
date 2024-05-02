@@ -1,34 +1,25 @@
-<section class="header-desktop">
-    <header class="grid-container header-content">
-        <div class="col-2">
-        </div>
-        
-        <nav class="col-8 nav-content" >
-    
-    
-            <div class="nav-item"  id="landing-header">Inicio</div>
-            <div class="nav-item"  id="landing-header">Horarios</div>
-            
-            <img src="/assets/svg/Recurso 7.svg" alt="" class="impala-logo">
-    
-            <div class="nav-item"  id="landing-header">Reglamento</div>
-            <div class="nav-item"  id="landing-header">Precios</div>
-    
-            <div class="back-drop-item" id="menu-backdrop"></div>
-        </nav>
-        <div class="col-2"></div>
-    </header>
+@if (display) {
+<nav class="navbar visible">
+    <div class="col-2"></div>
+    <div class="nav-items col-8">
+        <div class="nav-item" id="landing-header">Inicio</div>
+        <div class="nav-item" id="landing-header">Horarios</div>
 
-</section>
+        <img src="/assets/svg/Recurso 7.svg" alt="" class="impala-logo">
 
-
-<section class="header-mobile">
-
+        <div class="nav-item" id="landing-header">Reglamento</div>
+        <div class="nav-item" id="landing-header">Precios</div>
+        <div class="back-drop-item" id="menu-backdrop"></div>
+    </div>
+    <div class="col-2"></div>
+</nav>
+} @else {
+<nav class=" navbar visible">
     <header class="header-content">
-
         <button mat-mini-fab color="primary" class="menu-button" (click)="openSideNav()">
             <mat-icon>menu</mat-icon>
-          </button>
+        </button>
         <img src="/assets/svg/Recurso 7.svg" alt="" class="impala-logo">
     </header>
-</section>
+</nav>
+}

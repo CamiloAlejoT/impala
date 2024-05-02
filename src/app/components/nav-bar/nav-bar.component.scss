@@ -1,44 +1,48 @@
-.header-desktop {
-    display: block;
+nav {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    translate: 0 -72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    height: 72px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+    background: black;
+    transition: 0.3s;
 }
 
-.header-mobile {
-    display: none;
+nav.visible {
+    top: 0;
+    translate: 0;
 }
 
-.header-content {
-    padding: 1em 4rem;
-    position: relative;
+.nav-items {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 16px;
 }
 
 .impala-logo {
-    width: 10rem;
-    height: 5rem;
-    cursor: pointer;
+    width: 7rem;
     margin: 0 4rem;
 }
 
-.nav-content {
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    cursor: pointer;
-}
-
-
 .nav-item {
+    cursor: pointer;
     font-size: 1rem;
-    padding: 1rem 2rem 0;
+    padding: 1rem 2vw 0;
     color: #EC9522;
+    font-weight: 900;
 }
-
 
 .nav-item:hover {
     color: white;
 }
-
-
-
 
 .back-drop-item {
     background: rgba(255, 255, 255, 0.1);
@@ -47,11 +51,8 @@
     transition: all 0.5s ease;
     z-index: -1;
     border-radius: 0.25rem;
-    transform: translate(-0.5rem);
     top: -1rem;
     left: 50%;
-
-    // position: relative;
 }
 
 .back-drop-item::before {
@@ -64,6 +65,10 @@
 }
 
 @media (width < 768px) {
+    nav {
+        padding: 0;
+    }
+
     .header-desktop {
         display: none;
     }
@@ -73,10 +78,11 @@
     }
 
     .header-content {
-        display: flex !important;
-        justify-content: center;
-        align-items: center;
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
         position: relative;
+        display: flex;
+        justify-content: center;
     }
 
     .menu-button {
@@ -84,6 +90,10 @@
         left: 1.5rem;
         top: 1.5rem;
         background: #EC9522;
+    }
+
+    .impala-logo{ 
+        margin: 0;
     }
 
 

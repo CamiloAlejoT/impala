@@ -1,0 +1,108 @@
+<section class="container">
+
+    <div class="schedule-template">
+        <div class="section-tittle">
+            <span>TARIFAS</span>
+        </div>
+        <div class="infor-container">
+            @for (plan of plans; track $index) {
+            <div class="plan-section">
+                <span class="plan-name">
+                    {{plan.planName}}
+                </span>
+                <span>
+                    {{plan.cost}}
+                </span>
+
+            </div>
+            }
+            <div class="plan-section new-clients">
+                <span class="plan-name">
+                    CLIENTES <br> NUEVOS
+                </span>
+                <span>
+                    <span class="bold-hight">
+                        +$50.000
+                    </span>
+                    <span class="detail-plan">
+                        MEMBRESÍA
+                    </span>
+                    <br>
+                    <div class="bold-hight">
+                        10% DESCUENTO
+                    </div>
+
+                    <span class="detail-plan">
+                        PLAN 12 CLASES Y MES ILIMITADO
+                    </span>
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="schedule-template">
+        <div class="section-tittle">
+            <span>HORARIOS</span>
+        </div>
+        <div class=" schedule-infor-container">
+
+            <div class="col-1 schedule-details">
+                <div class="rhombus">
+                    <div class="sub-rhombus">
+                        <span class="schedule-type">A.M.</span>
+                    </div>
+                </div>
+                <div class=" schedule-template">
+                    <span class="schedule-tittle">
+                        LUNES A VIERNES
+                    </span>
+
+                    <span class="schedule-text">
+                        5:30 | 6:30 | 7:30 | 8:30 <br> OPEN BOX: 9:30 - 12:00
+                    </span>
+
+                    <span class="schedule-tittle">
+                        SÁBADO
+                    </span>
+
+                    <span class="schedule-text">
+                        8:00 | 9:00 | 10:00
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="col-1 schedule-details">
+                <div class="rhombus">
+                    <div class="sub-rhombus">
+                        <span class="schedule-type">P.M.</span>
+                    </div>
+                </div>
+                <div class=" schedule-template">
+                    <span class="schedule-tittle">
+                        LUNES A JUEVES
+                    </span>
+
+                    <span class="schedule-text">
+                        4:00 | 5:00 | 6:00 | 7:00 | 8:00
+                    </span>
+
+                    <span class="schedule-tittle">
+                        VIERNES
+                    </span>
+
+                    <span class="schedule-text">
+                        4:00 | 5:00 | 6:00 | 7:00
+                    </span>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>

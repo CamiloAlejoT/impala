@@ -1,0 +1,32 @@
+<div class="tittle">
+    NUESTROS ENTRENADORES
+</div>
+
+@for (instructor of instructors; track $index) {
+<div class="grid-template">
+    <div class="card">
+        <div class="image-box">
+            <img [src]="'/assets/photos/'+instructor.src">
+        </div>
+        <div class="content">
+            <h2 class="card-name">{{instructor.name}}</h2>
+            <p>{{instructor.description}}</p>
+        </div>
+    </div>
+    <!-- <div class="instructor-photo col-1"
+        [ngStyle]="{'background': getImageUrl(instructor.src), 'background-size': 'cover', 'background-position': 'center' }">
+    </div> -->
+    <div class="instructor-info col-1" [ngClass]="$index % 2 === 0 ? '': 'revert'">
+        <div class="instructor-name">
+            {{instructor.name}}
+        </div>
+        @for (text of instructor.data; track $index) {
+        <span class="instructor-data">
+            {{text}}
+        </span>
+        }
+
+    </div>
+
+</div>
+}

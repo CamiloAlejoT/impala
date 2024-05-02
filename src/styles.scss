@@ -1,10 +1,14 @@
 body {
     font-family: Roboto, sans-serif;
     background-color: black;
+    margin: 0;
 }
 
+// main {
+//     margin: 0;
+// }
 :root {
-    --mdc-dialog-container-color: rgba(0 0 0 70%);
+    --mdc-dialog-container-color: rgba(0, 0, 0, 80%);
   }
 
 /* You can add global styles to this file, and also import other style files */
